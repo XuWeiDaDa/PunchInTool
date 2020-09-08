@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">自动打卡</string>
+    <string name="notification_live_start">钉钉打开正在运行</string>
+</resources>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="介绍：进入页面如果有需要悬浮窗权限，显示在其他应用的上层把他打开,总而言之有要权限的就打开就OK了，可支持钉钉和企业微信调起（要先选择使用钉钉或是企业微信，默认是钉钉）,两种方式吊起钉钉和企业微信，一种拨打电话方式（手机里面需要有电话卡），另一种方式设置调起时间，然后点击保存按钮后提示成功，按home键APP退到后台（不能杀死）生效"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/tv_check"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="10dp"
+                android:background="#E5d"
+                android:gravity="center"
+                android:text="当前使用钉钉"
+                android:textColor="#fff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="保存时间输入示例：13:30"
+                android:textColor="#e57" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="保存电话输入示例：15546360000"
+                android:textColor="#e57" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="特别注意！！！ 保存时间的“:”为英文符号不是中文的，保存时间格式为24小时制，保存时间一次之后，每天就按照你设置的时间启动钉钉了，保存电话之后，你就可以使用保存的电话拨打仍在公司的电话，想更改电话或者时间重新输入电话号保存即可"
+                android:textColor="#e57" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/et_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="请输入时间"
+                    android:textColor="#666"
+                    android:textColorHint="#999" />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="#E5d"
+                    android:gravity="center"
+                    android:text="保存调起时间"
+                    android:textColor="#fff" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/et_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="请输入手机号码"
+                    android:textColor="#666"
+                    android:textColorHint="#999" />
+
+                <TextView
+                    android:id="@+id/tv_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="#E5d"
+                    android:gravity="center"
+                    android:text="保存拨打电话号（非本机号码）"
+                    android:textColor="#fff" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvMoney"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="打赏"
+                android:textColor="#333"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
